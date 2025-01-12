@@ -1,5 +1,4 @@
 # Scripts JavaScript - Testes
-
 Este repositório contém cinco scripts JavaScript que demonstram diferentes funcionalidades: 
 ##### 1 - Soma de números
 ##### 2 - Verificação de Fibonacci
