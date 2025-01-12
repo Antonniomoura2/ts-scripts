@@ -50,6 +50,12 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
           sudo apt-get update |
+          if [ -z "$AWS_REGION" ]; then
+            echo "AWS_REGION is NOT set"
+            exit 1
+          else
+            echo "AWS_REGION is set"
+          fi
           echo "AWS_REGION: $AWS_REGION"
           aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
           aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
