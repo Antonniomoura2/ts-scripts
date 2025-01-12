@@ -1,0 +1,28 @@
+{
+  "name": "teste",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Este repositório contém cinco scripts JavaScript que demonstram diferentes funcionalidades:  ##### 1 - Soma de números ##### 2 - Verificação de Fibonacci ##### 3 - Cálculo de faturamento ##### 4 - Percentual de faturamento por estado  ##### 5 - Inversão de string.  Cada script é independente e pode ser executado separadamente.",
+  "main": "test1.js",
+  "scripts": {
+    "test": "jest",
+    "test1": "node src/test1.js",
+    "test2": "node src/test2.js",
+    "test3": "node src/test3.js",
+    "test4": "node src/test4.js",
+    "test5": "node src/test5.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
