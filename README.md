@@ -38,7 +38,7 @@ Este script faz uma requisição a uma API para inverter uma string.
 O endpoint da API espera uma string como parâmetro de consulta e retorna a string invertida.
 ```bash
    curl --location 'https://n03eizts4c.execute-api.us-east-1.amazonaws.com/prod/invert?str=Reverso' \
-        --header 'x-api-key: WIbtoiQ09u3oZFXBn6asyUtiXZNc1s314dJVXmn9'
+        --header 'x-api-key: 9L1KfoAze6872xjBsuPIS9t8WDf3ygqm3fob4ZvD'
 ```
 ### *Limitação de Requisições*
 
