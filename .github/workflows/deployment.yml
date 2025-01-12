@@ -45,6 +45,8 @@ jobs:
 
       - name: Set up AWS CLI
         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TEST: 111
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
@@ -55,6 +57,12 @@ jobs:
             exit 1
           else
             echo "AWS_REGION is set"
+          fi
+          if [ -z "$TEST" ]; then
+            echo "TEST is NOT set"
+            exit 1
+          else
+            echo "TEST is set"
           fi
           echo "AWS_REGION: $AWS_REGION"
           aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
