@@ -31,6 +31,7 @@ jobs:
 
   terraform:
     runs-on: ubuntu-latest
+    environment: secrets
     needs: test
     if: github.ref == 'refs/heads/main'
     defaults:
